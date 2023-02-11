@@ -1,0 +1,14 @@
+debugFlag=-g
+
+p1: WordData.o p1.o 
+	g++ -o p1 p1.o WordData.o $(debugFlag)
+
+p1.o: p1.cpp  WordData.h
+	g++ -c p1.cpp $(debugFlag)
+
+WordData.o: WordData.cpp WordData.h 
+	g++ -c WordData.cpp $(debugFlag)
+
+
+clean: 
+	\rm -f *.o p1
