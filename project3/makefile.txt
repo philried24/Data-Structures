@@ -1,0 +1,22 @@
+debugFlag=-g
+
+app: WordListList.o WordDataList.o WordData.o WordCList.o app.o 
+	g++ -o app app.o WordListList.o WordDataList.o WordData.o WordCList.o $(debugFlag)
+
+app.o: app.cpp WordList.h WordDataList.h WordCList.h WordListList.h
+	g++ -c app.cpp $(debugFlag)
+
+WordCList.o: WordCList.cpp WordCList.h CLinkedList.h
+	g++ -c WordCList.cpp $(debugFlag)
+
+WordData.o: WordData.cpp WordData.h
+	g++ -c WordData.cpp $(debugFlag)
+
+WordDataList.o: WordDataList.cpp WordDataList.h
+	g++ -c WordDataList.cpp $(debugFlag)
+
+WordListList.o: WordListList.cpp WordListList.h
+	g++ -c WordListList.cpp $(debugFlag)
+
+clean: 
+	\rm -f *.o app

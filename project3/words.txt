@@ -1,0 +1,4 @@
+dog pony cat
+pony
+horse dog
+cat dog
