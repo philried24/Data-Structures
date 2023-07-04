@@ -1,0 +1,14 @@
+debugFlag=-g
+
+tree: BinarySearchTree.o TreeTest.o 
+	g++ -o tree TreeTest.o BinarySearchTree.o $(debugFlag)
+
+TreeTest.o: TreeTest.cpp  BinarySearchTree.h
+	g++ -c TreeTest.cpp $(debugFlag)
+
+BinarySearchTree.o: BinarySearchTree.cpp BinarySearchTree.h 
+	g++ -c BinarySearchTree.cpp $(debugFlag)
+
+
+clean: 
+	\rm -f *.o tree    

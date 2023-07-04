@@ -1,0 +1,59 @@
+
+
+Name:   Philipp
+Grade:  16
+
+Readme
+- Was supposed to have a narrative. Penalty: 2
+
+Doxygen
+- It's all there, but the briefs are mostly uninformative.
+
+Running
+- No makefile submitted and Treetest.cpp renamed.
+  * I had to grab a makefile and rename the file. Penalty: 1
+- Ran fine.
+
+Files
+- What's up with count2 ? The counter is always initially 1.
+- What's the language on Line 11 of the class' cpp file?
+- Removal options handled in the class. You need to read my emails.
+  Penalty: 5
+
+You can do this, and well. Follow specs/attend to details.
+
+Areas of Interest in Grading
+
+-[Compilation]					 
+  * Project compiles 		
+  * If project doesn't compile, is it close?
+
+-[Test Cases]-                                  
+  * Correctly manipulates trees - 
+  * Data handled correctly
+    + Duplicate items combined correctly
+  * Test scripts worked
+    * Gradable with the script.
+
+-[Structure]-                                  
+  * Functions written|updated to specs
+  * Declarations 
+  * BinaryTree<eltType> remains generic
+  * Changed access in BinaryTree<eltType> to protected
+  * Handled access to node members: One of
+    + Added TermTree friend as friend of TreeNode 
+    + Used member functions in base class for indirect access
+
+-[Style & Readability]-                         
+  * Documentation of provided files
+    + Appropriate header block in the file
+  * Self documenting variable/funtion names 
+  * Proper usage of white space to delineate logical blocks of code
+  * Proper Indendation  and style in general
+
+-[Doxygen Site]
+  * Mainpage
+  * All files and classes have briefs that appear in headers
+
+
+================================= Grade Report =================================
